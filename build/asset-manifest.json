@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mitchpatterson/afraidknotropes/static/css/main.668a8897.chunk.css",
+    "main.js": "/mitchpatterson/afraidknotropes/static/js/main.3b4edc02.chunk.js",
+    "main.js.map": "/mitchpatterson/afraidknotropes/static/js/main.3b4edc02.chunk.js.map",
+    "runtime-main.js": "/mitchpatterson/afraidknotropes/static/js/runtime-main.f1466a47.js",
+    "runtime-main.js.map": "/mitchpatterson/afraidknotropes/static/js/runtime-main.f1466a47.js.map",
+    "static/js/2.db822d6e.chunk.js": "/mitchpatterson/afraidknotropes/static/js/2.db822d6e.chunk.js",
+    "static/js/2.db822d6e.chunk.js.map": "/mitchpatterson/afraidknotropes/static/js/2.db822d6e.chunk.js.map",
+    "static/js/3.ac0c9fe2.chunk.js": "/mitchpatterson/afraidknotropes/static/js/3.ac0c9fe2.chunk.js",
+    "static/js/3.ac0c9fe2.chunk.js.map": "/mitchpatterson/afraidknotropes/static/js/3.ac0c9fe2.chunk.js.map",
+    "index.html": "/mitchpatterson/afraidknotropes/index.html",
+    "static/css/main.668a8897.chunk.css.map": "/mitchpatterson/afraidknotropes/static/css/main.668a8897.chunk.css.map",
+    "static/js/2.db822d6e.chunk.js.LICENSE.txt": "/mitchpatterson/afraidknotropes/static/js/2.db822d6e.chunk.js.LICENSE.txt",
+    "static/media/facebook.4572f314.svg": "/mitchpatterson/afraidknotropes/static/media/facebook.4572f314.svg",
+    "static/media/instagram.4d3c7bf8.svg": "/mitchpatterson/afraidknotropes/static/media/instagram.4d3c7bf8.svg",
+    "static/media/ComingSoon.scss": "/mitchpatterson/afraidknotropes/static/media/ropeBG.68ac4c16.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1466a47.js",
+    "static/js/2.db822d6e.chunk.js",
+    "static/css/main.668a8897.chunk.css",
+    "static/js/main.3b4edc02.chunk.js"
+  ]
+}
