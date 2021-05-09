@@ -1,0 +1,45 @@
+@import "../../Styles/module.scss";
+
+.page--order {
+    width: 100%;
+    padding: 20px;
+    background-color: $color--nickel;
+    @include Flexbox(row, flex-start, center);
+
+    .order-content {
+        max-width: 1200px;
+        width: 100%;
+        @include Flexbox(column, center, center);
+
+        .content-title {
+            color: $color--richBlack;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .content-information {
+            color: white;
+            font-size: 18px;
+            margin: 30px 0;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .content-form {
+            max-height: 0;
+            transition: max-height 0.5s ease;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        &.show-order {
+            .content-form {
+                max-height: 2000px;
+            }
+
+            .content-confirm {
+                display: none;
+            }
+        }
+    }
+}

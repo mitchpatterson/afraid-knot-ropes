@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Satisfy&display=swap');
+@import "./Styles/module";
 
 * {
   margin: 0;
@@ -6,10 +7,58 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   font-size: 14px;
+  font-family: "Lato", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  padding: 12px 23px;
+  font-size: 14px;
+  color: white;
+  background-color: $color--richBlack;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  outline: 0;
+  border: 2px solid $color--richBlack;
+  font-weight: 700;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: white;
+    color: $color--richBlack;
+  }
+}
+
+ul {
+  list-style-type: none;
+  li {
+    text-decoration: none;
+    
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+
+  &:active {
+    outline: none;
+  }
 }
 
 .App {
-  text-align: center;
+  .App-content {}
 }

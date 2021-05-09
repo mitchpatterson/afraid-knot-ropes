@@ -1,0 +1,151 @@
+@import "../../Styles/module.scss";
+
+.component--navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px; 
+    width: 100%;
+    @include Flexbox(row, center, center);
+    padding: 0 20px;
+    background-color: $color--richBlack;
+
+    .navigation-content {
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        @include Flexbox(row, center, space-between);
+
+        .logo {
+            @include Flexbox(row, center);
+            color: white;
+            font-size: 15px;
+
+            svg {
+                height: 40px;
+                width: auto;
+                margin-right: 10px;
+            }
+        }
+
+        .hamburger-menu {
+            height: 25px;
+            width: 25px;
+            position: relative;
+            display: none;
+            cursor: pointer;
+
+            .line {
+                height: 5px;
+                width: 100%;
+                border-radius: 10px;
+                background-color: white;
+                position: absolute;
+                left: 0;
+                transition: all 0.5s ease;
+
+                &:nth-child(1) {
+                    top: 0;
+                }
+                
+                &:nth-child(2) {
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+
+                &:nth-child(3) {
+                    bottom: 0;
+                }
+            }
+
+            &.open {
+                .line {
+                    &:nth-child(1) {
+                        top: 50%;
+                        transform: translate(0, -50%) rotate(-135deg);
+                    }
+                    
+                    &:nth-child(2) {
+                        top: 50%;
+                        transform: translate(0, -50%) rotate(315deg);
+                    }
+    
+                    &:nth-child(3) {
+                        top: 50%;
+                        transform: translate(0, -50%) rotate(-315deg);
+                    }
+                }
+            }
+        }
+
+        .pages {
+            ul {
+                @include Flexbox(row, center);
+
+                li {
+                    padding: 0 10px;
+                    font-size: 20px;
+                    height: 50px;
+                    cursor: pointer;
+                    border-bottom: 3px solid transparent;
+                    transition: all 0.5s ease;
+                    @include Flexbox(row, center);
+                    
+                    a {
+                        color: white;
+                    }
+
+                    &:hover {
+                        border-bottom: 3px solid white;
+                    }
+                }
+            }
+        }
+    }
+
+    @include MobileQuery {
+        .navigation-content {
+            position: relative;
+            @include Flexbox(row-reverse, center, space-between);
+
+            .hamburger-menu {
+                display: block;
+            }
+
+            .pages {
+                position: absolute;
+                left: -100%;
+                top: 100%;
+                background-color: #ffffff;
+                transition: all 0.5s ease;
+                height: calc(100vh - 50px);
+
+                ul {
+                    @include Flexbox(column, center, center);
+
+                    li {
+                        border-bottom: none;
+                        border-left: 5px solid transparent;
+                        width: 100%;
+                        padding: 10px 30px;
+
+                        a {
+                            color: $color--celdaonBlue;
+                        }
+
+                        &:hover {
+                            border-bottom: none;
+                            border-left: 5px solid $color--celdaonBlue;
+                        }
+                    }
+                }
+            }
+
+            &.menu-open {
+                .pages {
+                    left: -20px;
+                }
+            }
+        }
+    }
+}

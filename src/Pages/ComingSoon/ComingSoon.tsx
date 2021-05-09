@@ -1,7 +1,7 @@
 import React from "react";
 
-import {ReactComponent as FacebookLogo} from "../Assets/Vectors/facebook.svg";
-import {ReactComponent as InstagramLogo} from "../Assets/Vectors/instagram.svg";
+import {ReactComponent as FacebookLogo} from "../../Assets/Vectors/facebook.svg";
+import {ReactComponent as InstagramLogo} from "../../Assets/Vectors/instagram.svg";
 import "./ComingSoon.scss";
 
 interface ComingSoonPageProps {}

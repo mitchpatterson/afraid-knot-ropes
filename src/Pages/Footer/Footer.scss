@@ -1,0 +1,16 @@
+@import "../../Styles/module.scss";
+
+.page--footer {
+    padding: 40px;
+    width: 100%;
+    @include Flexbox(row, center, center);
+    background-color: $color--richBlack;
+
+    .footer-content {
+        max-width: 1200px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+    }
+};

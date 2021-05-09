@@ -1,0 +1,101 @@
+@import "../../Styles/module.scss";
+
+.page--landing {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../Assets/Images/ropeBG.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    @include Flexbox(row, center, center);
+
+    .landing-content {
+        height: 100%;
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+        @include Flexbox(column, center, center);
+
+        .content-padding {
+            @include Flexbox(column, center, center);
+            padding: 50px 40px;
+            background-color: #ffffff90;
+            border-radius: 15px;
+            border: 5px solid $color--richBlack;
+        }
+
+        .content-title {
+            color: $color--richBlack;
+            font-size: 80px;
+            line-height: 70px;
+            font-family: "Satisfy";
+            padding: 0 5px;
+            text-align: center;
+        }
+
+        .content-description {
+            font-size: 20px;
+            font-weight: 500;
+            color: $color--blackChocolate;
+            max-width: 500px;
+            margin: 40px 0 30px 0;
+            text-align: center;
+        }
+
+        .content-socials {
+            @include Flexbox(row, center);
+
+            a {
+                margin: 0 5px;
+
+                .icon {
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    transition: all 0.5s ease;
+                    height: 50px;
+                    width: 50px;
+                    background-color: transparent;
+                    @include Flexbox(row, center, center);
+
+                    svg {
+                        fill: white;
+                        height: 25px;
+                        width: 25px;
+                    }
+
+                    &:hover {
+                        background-color: white;
+                        svg {
+                            fill: $color--richBlack;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-action {
+            margin-top: 30px;
+
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @include MobileQuery {
+        .landing-content {
+            .content-title {
+                font-size: 40px;
+            }
+            .content-description {
+                font-size: 16px;
+                margin: 20px 0 15px 0;
+            }
+            .content-action {
+                button {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

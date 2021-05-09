@@ -2,12 +2,20 @@ import React from 'react';
 
 import './App.scss';
 
-import {ComingSoonPage} from "./Pages";
+import {AboutPage, FooterPage, LandingPage, ProductsPage, OrderPage} from "./Pages";
+import {Navigation} from "./Components";
 
 function App() {
   return (
     <div className="App">
-      <ComingSoonPage />
+      <div className="App-content">
+        <Navigation />
+        <LandingPage />
+        <AboutPage />
+        <ProductsPage />
+        <OrderPage />
+        <FooterPage />
+      </div>
     </div>
   );
 }
