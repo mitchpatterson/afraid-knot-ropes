@@ -15,7 +15,7 @@ export const LandingPage: React.FC<LandingPageProps> = () => {
                         {"Afraid Knot Ropes"}
                     </div>
                     <div className="content-description">
-                        {"High quality Kinetic Energy recovery ropes. All ropes are coated and the eyes have wear pads for abrasion & wear resistance."}
+                        {"High quality Kinetic Energy Recovery Ropes, Winch Ropes, Soft Shackles, and more."}
                     </div>
                     <div className="content-socials">
                         <a href={"https://www.facebook.com/Afraid-Knot-Ropes-104810451710234"} target="_blank" rel="noreferrer">

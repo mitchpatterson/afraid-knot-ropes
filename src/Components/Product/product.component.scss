@@ -1,0 +1,35 @@
+@import "../../Styles/module.scss";
+
+.product {
+    margin: 10px 15px;
+
+    .product-image {
+        border-radius: 10px;
+        height: 200px;
+        width: 300px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: all 2s ease;
+
+        &:hover {
+            cursor: pointer;
+            background-size: 125%;
+        }
+    }
+
+    .product-details {
+        @include Flexbox(row, center, space-between);
+        width: 100%;
+        font-weight: 700;
+        .product-name {
+            flex-shrink: 0;
+            margin-right: 10px;
+            color: white;
+        }
+        .product-price {
+            flex-shrink: 0;
+            color: white;
+        }
+    }
+}
