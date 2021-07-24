@@ -1,7 +1,7 @@
 import React from "react";
 
-import {ReactComponent as FacebookIcon} from "../../Assets/Vectors/facebook_plain.svg";
-import {ReactComponent as InstagramIcon} from "../../Assets/Vectors/instagram_plain.svg";
+import {ReactComponent as FacebookIcon} from "../../../../Assets/Vectors/facebook_plain.svg";
+import {ReactComponent as InstagramIcon} from "../../../../Assets/Vectors/instagram_plain.svg";
 import "./Landing.scss";
 
 interface LandingPageProps {};

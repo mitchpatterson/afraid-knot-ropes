@@ -1,6 +1,6 @@
 @import "../../Styles/module.scss";
 
-.product {
+.component--product {
     margin: 10px 15px;
 
     .product-image {
@@ -11,10 +11,22 @@
         background-repeat: no-repeat;
         background-size: 100%;
         transition: all 2s ease;
+        position: relative;
+        overflow: hidden;
 
         &:hover {
             cursor: pointer;
             background-size: 125%;
+        }
+
+        .product-on-sale {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: #00000080;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
         }
     }
 

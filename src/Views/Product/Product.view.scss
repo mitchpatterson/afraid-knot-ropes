@@ -1,0 +1,7 @@
+@import "../../Styles/module.scss";
+
+.view--product {
+    min-height: 100vh;
+    @include Flexbox(row, center, center);
+    width: 100%;
+}

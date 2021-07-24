@@ -1,8 +1,8 @@
 import React from "react";
 
-import {ReactComponent as LightBulbIcon} from "../../Assets/Vectors/lightbulb.svg";
-import {ReactComponent as PendulumIcon} from "../../Assets/Vectors/pendulum.svg";
-import {ReactComponent as RopeIcon} from "../../Assets/Vectors/rope.svg";
+import {ReactComponent as LightBulbIcon} from "../../../../Assets/Vectors/lightbulb.svg";
+import {ReactComponent as PendulumIcon} from "../../../../Assets/Vectors/pendulum.svg";
+import {ReactComponent as RopeIcon} from "../../../../Assets/Vectors/rope.svg";
 import "./About.scss";
 
 interface AboutPageProps {};

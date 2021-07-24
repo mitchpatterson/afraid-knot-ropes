@@ -1,9 +1,11 @@
+@import "../../../../Styles/module.scss";
+
 .page--coming-soon {
     height: 100vh;
     width: 100vw;
     padding: 20px;
     background-color: black;
-    background-image: url('../../Assets/Images/ropeBG.jpeg');
+    background-image: url('../../../../Assets/Images/ropeBG.jpeg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

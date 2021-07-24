@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 
-import {ProductService} from "../../Service";
+import {ProductService} from "../../../../Service";
 import {ProductProps, ProductsPageProps} from "./Products.definition";
-import {Product, ProductOverview} from "../../Components";
+import {Product, ProductOverview} from "../../../../Components";
 import "./Products.scss";
 
 export const ProductsPage: React.FC<ProductsPageProps> = () => {

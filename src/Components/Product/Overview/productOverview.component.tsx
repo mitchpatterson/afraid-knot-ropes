@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 import {CLASSNAMES} from "./productOverview.definition";
 import {ReactComponent as ChevronRightIcon} from "../../../Assets/Vectors/chevron_right.svg";
@@ -21,6 +21,15 @@ export const ProductOverview: React.FC<any> = (product) => {
         if (product.updateProduct) product.updateProduct(undefined);
     };
 
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+
+        return () => {
+            document.body.style.overflow = '';
+            return;
+        }
+    }, [])
+
     return (
         <div className={CLASSNAMES.COMPONENT}>
             <div className={CLASSNAMES.COMPONENT_CONTENT}>
@@ -35,7 +44,6 @@ export const ProductOverview: React.FC<any> = (product) => {
                         {product?.name}
                     </div>
                     <div className={CLASSNAMES.PRODUCT_DETAILS_DESCRIPTION}>
-                        <div className={CLASSNAMES.PRODUCT_DETAILS_DESCRIPTION_TITLE}>{"Details"}</div>
                         <div className={CLASSNAMES.PRODUCT_DETAILS_DESCRIPTION_TEXT_CONTAINER}>
                             {product?.description.map((point: string, index: number) => (
                                 <div

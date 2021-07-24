@@ -1,6 +1,6 @@
 import React from "react";
  
-import {ProductProps} from "./product.definition";
+import {ProductProps, CLASSNAMES} from "./product.definition";
 import "./product.component.scss";
 
 export const Product: React.FC<ProductProps> = (props) => {
@@ -9,15 +9,20 @@ export const Product: React.FC<ProductProps> = (props) => {
         name,
         price,
         updateProduct,
+        onSale,
+        inStock,
     } = props;
     return (
-        <div className="product" onClick={() => updateProduct(props)}>
-            <div className="product-image" style={{backgroundImage: `url(${image})`}} />
-            <div className="product-details">
-                <div className="product-name">
+        <div className={CLASSNAMES.COMPONENT} onClick={() => updateProduct(props)}>
+            <div className={CLASSNAMES.IMAGE} style={{backgroundImage: `url(${image})`}}>
+                {(onSale && inStock) ? <div className={CLASSNAMES.ON_SALE}>On Sale</div> : null}
+                {!inStock && <div className={CLASSNAMES.ON_SALE}>Out of stock</div>}
+            </div>
+            <div className={CLASSNAMES.DETAILS}>
+                <div className={CLASSNAMES.NAME}>
                     {name}
                 </div>
-                <div className="product-price">
+                <div className={CLASSNAMES.PRICE}>
                     ${price}
                 </div>
             </div>
