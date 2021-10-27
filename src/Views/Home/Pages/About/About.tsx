@@ -16,15 +16,45 @@ interface AboutItem {
 const aboutItems: Array<AboutItem> = [{
     title: "Our Origin",
     icon: LightBulbIcon,
-    description: "Born out of a need for Canadian made high quality reasonably priced recovery ropes. I have been part of the off-road community for years using tow straps, winch lines, and cables. I looked for a better safer solution and found that kinetic energy ropes where the answer I was looking for, but I couldn’t find any Canadian made or reasonably priced. I approached a reputable, local rope manufacturer and started the process, after months of designs, and testing we had what we were looking for! We are proud to bring you our products and we work tirelessly to achieve the highest quality. We believe it is more important to keep our products reasonably priced than it is to turn a huge profit. "
+    description: `Afraid Knot Ropes is based in Kawartha Lakes, Ontario, Canada. We pride ourselves
+    on delivering safe, high quality, kninetic ropes strong enough to meet the demands of
+    off-road vehicles. Our founder Ian McKague grew up on a farm in rural Ontario, and is a
+    passionate off-road enthusiast.<split>
+    After years of towing using tow straps, winch lines, and cables Ian began the search for
+    a safer solution that wouldn’t leave him stuck in the mud. It was clear that Kinetic energy
+    ropes were the answer, but Canadian made, affordable options weren’t available.
+    And so, Afraid Knot Ropes was born.<split>
+    Working in partnership with a Canadian manufacturer we began an intensive process of
+    research, design, and rigorous product testing to create a line of multi-purpose ropes to
+    keep you moving.<split>
+    Our tireless efforts paid off and we are proud to offer ropes of the highest quality, at fair
+    prices. As off-roaders ourselves we focus on delivering quality products at reasonable
+    prices so more people can safely enjoy taking the road less traveled.`
 }, {
     title: "Why Afraid Knot Ropes?",
     icon: RopeIcon,
-    description: "We strive to produce the best quality ropes you can buy while keeping our prices within the budget of the everyday off-road enthusiast, farmer, truck driver, and equipment operator. Our ropes are coated for durability, UV protection, snag and wear resistance. They come with heavy duty wear pads on the loops, so you won’t have to worry about wearing through. We are proud to be Canadian made supporting Canadian companies and Canadian families."
+    description: `We strive to produce the best quality ropes you can buy, while respecting the budgets of
+    the everyday off-road enthusiast, farmer, truck driver, and equipment operator.<split>
+    Our ropes are coated for durability, UV protection, snag and wear resistance. They
+    come with heavy duty wear pads on the loops, so you won’t have to worry about
+    wearing through. We are proud to be Canadian made supporting Canadian companies
+    and Canadian families.`
 }, {
     title: "Why Kinetic?",
     icon: PendulumIcon,
-    description: "If you know you know! If you have been recovered or done a recovery using a kinetic rope, you know the benefits. Chains, cables, and straps have no stretch. Have you ever gotten stuck had a buddy hook up his cable and almost pull your tow hooks off? Well, here is your solution, with up to 30% stretch kinetic energy ropes are designed to take the initial hit, dissipating and converting the shock energy into torque. Have you ever watched someone hook a chain or winch line to a disabled vehicle, start to tow and watch the line go slack? The disabled vehicle doesn’t stop in time, The recovery vehicle without noticing, hits the gas, Just the thought makes me cringe. This, can and will be where damage, injury, and recovery gear failure happens. The hard jerk puts huge force on every piece of the recovery system. Our kinetic energy ropes with up to 30% stretch can mitigate and if properly used eliminate the damage caused by those types of sicarios."
+    description: `If you know you know! If you have been recovered or done a recovery using a kinetic
+    rope, you know the benefits.<split>
+    Chains, cables, and straps have no stretch. Have you ever gotten stuck had a buddy
+    hook up his cable and almost pull your tow hooks off? Well, here is your solution, with
+    up to 30% stretch kinetic energy ropes are designed to take the initial hit, dissipating,
+    and converting the shock energy into torque.<split>
+    Have you ever watched someone hook a chain or winch line to a disabled vehicle, start
+    to tow and watch the line go slack? The disabled vehicle doesn’t stop in time, the
+    recovery vehicle hits the gas the gas without noticing. The thought is enough to make
+    any off-roader cringe. This can and will be where damage, injury, and recovery gear
+    failure happens. The hard jerk puts huge force on every piece of the recovery system.
+    Our kinetic energy ropes with up to 30% stretch can mitigate and if properly used
+    eliminate the damage caused by those types of sicarios!`
 }];
 
 export const AboutPage: React.FC<AboutPageProps> = () => {
@@ -37,7 +67,7 @@ export const AboutPage: React.FC<AboutPageProps> = () => {
                         <div className="about-item" key={`about-item-${item.title}`}>
                             <div className="about-item-icon"><Icon /></div>
                             <div className="about-item-title">{item.title}</div>
-                            <div className="about-item-description">{item.description}</div>
+                            <div className="about-item-description">{item.description.split("<split>").map((str) => <p>{str}</p>)}</div>
                         </div>
                     );
                 })}

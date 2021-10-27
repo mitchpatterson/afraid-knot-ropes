@@ -9,6 +9,7 @@
     @include Flexbox(row, center, center);
     padding: 0 20px;
     background-color: $color--richBlack;
+    z-index: 9999999;
 
     .navigation-content {
         max-width: 1200px;
