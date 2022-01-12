@@ -17,7 +17,7 @@ const aboutItems: Array<AboutItem> = [{
     title: "Our Origin",
     icon: LightBulbIcon,
     description: `Afraid Knot Ropes is based in Kawartha Lakes, Ontario, Canada. We pride ourselves
-    on delivering safe, high quality, kninetic ropes strong enough to meet the demands of
+    on delivering safe, high quality, kinetic ropes strong enough to meet the demands of
     off-road vehicles. Our founder Ian McKague grew up on a farm in rural Ontario, and is a
     passionate off-road enthusiast.<split>
     After years of towing using tow straps, winch lines, and cables Ian began the search for
@@ -50,11 +50,11 @@ const aboutItems: Array<AboutItem> = [{
     and converting the shock energy into torque.<split>
     Have you ever watched someone hook a chain or winch line to a disabled vehicle, start
     to tow and watch the line go slack? The disabled vehicle doesn’t stop in time, the
-    recovery vehicle hits the gas the gas without noticing. The thought is enough to make
+    recovery vehicle hits the gas without noticing. The thought is enough to make
     any off-roader cringe. This can and will be where damage, injury, and recovery gear
     failure happens. The hard jerk puts huge force on every piece of the recovery system.
     Our kinetic energy ropes with up to 30% stretch can mitigate and if properly used
-    eliminate the damage caused by those types of sicarios!`
+    eliminate the damage caused by those types of scenarios!`
 }];
 
 export const AboutPage: React.FC<AboutPageProps> = () => {

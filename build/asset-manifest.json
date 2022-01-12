@@ -1,25 +1,34 @@
 {
   "files": {
-    "main.css": "/mitchpatterson/afraidknotropes/static/css/main.668a8897.chunk.css",
-    "main.js": "/mitchpatterson/afraidknotropes/static/js/main.3b4edc02.chunk.js",
-    "main.js.map": "/mitchpatterson/afraidknotropes/static/js/main.3b4edc02.chunk.js.map",
-    "runtime-main.js": "/mitchpatterson/afraidknotropes/static/js/runtime-main.f1466a47.js",
-    "runtime-main.js.map": "/mitchpatterson/afraidknotropes/static/js/runtime-main.f1466a47.js.map",
-    "static/js/2.db822d6e.chunk.js": "/mitchpatterson/afraidknotropes/static/js/2.db822d6e.chunk.js",
-    "static/js/2.db822d6e.chunk.js.map": "/mitchpatterson/afraidknotropes/static/js/2.db822d6e.chunk.js.map",
-    "static/js/3.ac0c9fe2.chunk.js": "/mitchpatterson/afraidknotropes/static/js/3.ac0c9fe2.chunk.js",
-    "static/js/3.ac0c9fe2.chunk.js.map": "/mitchpatterson/afraidknotropes/static/js/3.ac0c9fe2.chunk.js.map",
-    "index.html": "/mitchpatterson/afraidknotropes/index.html",
-    "static/css/main.668a8897.chunk.css.map": "/mitchpatterson/afraidknotropes/static/css/main.668a8897.chunk.css.map",
-    "static/js/2.db822d6e.chunk.js.LICENSE.txt": "/mitchpatterson/afraidknotropes/static/js/2.db822d6e.chunk.js.LICENSE.txt",
-    "static/media/facebook.4572f314.svg": "/mitchpatterson/afraidknotropes/static/media/facebook.4572f314.svg",
-    "static/media/instagram.4d3c7bf8.svg": "/mitchpatterson/afraidknotropes/static/media/instagram.4d3c7bf8.svg",
-    "static/media/ComingSoon.scss": "/mitchpatterson/afraidknotropes/static/media/ropeBG.68ac4c16.jpeg"
+    "main.css": "/static/css/main.0649747c.chunk.css",
+    "main.js": "/static/js/main.2ef689a1.chunk.js",
+    "main.js.map": "/static/js/main.2ef689a1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.42898134.js",
+    "runtime-main.js.map": "/static/js/runtime-main.42898134.js.map",
+    "static/js/2.2a19ab33.chunk.js": "/static/js/2.2a19ab33.chunk.js",
+    "static/js/2.2a19ab33.chunk.js.map": "/static/js/2.2a19ab33.chunk.js.map",
+    "static/js/3.08c22d3c.chunk.js": "/static/js/3.08c22d3c.chunk.js",
+    "static/js/3.08c22d3c.chunk.js.map": "/static/js/3.08c22d3c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0649747c.chunk.css.map": "/static/css/main.0649747c.chunk.css.map",
+    "static/js/2.2a19ab33.chunk.js.LICENSE.txt": "/static/js/2.2a19ab33.chunk.js.LICENSE.txt",
+    "static/media/AKR-colour full logo.31d69c33.svg": "/static/media/AKR-colour full logo.31d69c33.svg",
+    "static/media/canada_flag.6e35efad.svg": "/static/media/canada_flag.6e35efad.svg",
+    "static/media/cancel.c88be099.svg": "/static/media/cancel.c88be099.svg",
+    "static/media/chevron_right.a3a6015f.svg": "/static/media/chevron_right.a3a6015f.svg",
+    "static/media/facebook.4572f314.svg": "/static/media/facebook.4572f314.svg",
+    "static/media/facebook_plain.1e4e4ffa.svg": "/static/media/facebook_plain.1e4e4ffa.svg",
+    "static/media/instagram.4d3c7bf8.svg": "/static/media/instagram.4d3c7bf8.svg",
+    "static/media/instagram_plain.482d4132.svg": "/static/media/instagram_plain.482d4132.svg",
+    "static/media/lightbulb.4c93e07b.svg": "/static/media/lightbulb.4c93e07b.svg",
+    "static/media/pendulum.2ddae742.svg": "/static/media/pendulum.2ddae742.svg",
+    "static/media/rope.b0a4eed0.svg": "/static/media/rope.b0a4eed0.svg",
+    "static/media/Landing.scss": "/static/media/ropeBG.68ac4c16.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1466a47.js",
-    "static/js/2.db822d6e.chunk.js",
-    "static/css/main.668a8897.chunk.css",
-    "static/js/main.3b4edc02.chunk.js"
+    "static/js/runtime-main.42898134.js",
+    "static/js/2.2a19ab33.chunk.js",
+    "static/css/main.0649747c.chunk.css",
+    "static/js/main.2ef689a1.chunk.js"
   ]
 }
